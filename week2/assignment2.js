@@ -37,12 +37,13 @@ console.log(
   "Tüm 'Water' türündeki Pokemonlar deneyim puanı en az 60 mı?",
   allWaterPokemonsHighExperience
 );
-
 const someFirePokemonHighExperience = pokemons.filter(pokemon=>pokemon.type==='Fire').some(pokemon=>pokemon.experience>=70)
 console.log(
   "'Fire' türündeki Pokemonlardan en az biri deneyim puanı 70 veya daha fazla mı?",
   someFirePokemonHighExperience
 );
+const someFirePokemonHighExperience= pokemons.some(pokemon=>pokemon.type==='Fire'&& pokemon.experience>=70)
+console.log(someFirePokemonHighExperience)
 
 //Pokemon dizisinde bulunan "Electric" türündeki Pokemon'ların deneyim puanlarının toplamını
 // kullanarak hesaplamak istiyorsunuz.
